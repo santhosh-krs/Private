@@ -1,0 +1,14 @@
+﻿PRCreatedDate:3
+LOBApprovalDate=4
+CommercialApprovalDate=8
+POReleasedDate=10
+ExpectedDate=25
+PORecivedDate:1
+PRNumber:7
+SWHW=
+Description
+PONumber
+Project
+ManagerName
+Status
+Quantity

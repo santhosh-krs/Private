@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33ED25D1-3DCB-466B-9A57-79FAE8DE8C03}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>ProcurmentKanbanBoard</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <EmbeddedResource Include="ProcurmentKanbanBoard\ProcurmentKanbanBoard\Properties\PoResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PoResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Office.Interop.Excel" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="ProcurmentKanbanBoard\ApplicationSettings.cs" />
+    <Compile Include="ProcurmentKanbanBoard\ProcurmentKanbanBoard\Properties\PoResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PoResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ProcurmentKanbanBoard\TaskCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProcurmentKanbanBoard\HelperClass.cs" />
+    <Compile Include="ProcurmentKanbanBoard\PRDataCollection.cs" />
+    <Compile Include="ProcurmentKanbanBoard\PRData.cs" />
+    <Compile Include="ProcurmentKanbanBoard\Kanban.cs" />
+    <Compile Include="ProcurmentKanbanBoard\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcurmentKanbanBoard\View.cs" />
+    <Compile Include="ProcurmentKanbanBoard\Win32Helper.cs" />
+    <Compile Include="ProcurmentKanbanBoard\Program.cs" />
+    <Compile Include="ProcurmentKanbanBoard\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="ProcurmentKanbanBoard.ColumnInformation.txt" />
+    <EmbeddedResource Include="ProcurmentKanbanBoard.ProcurmentKanbanBoard.Properties.Resource.resources" />
+    <EmbeddedResource Include="ProcurmentKanbanBoard.MainWindow.resources" />
+    <EmbeddedResource Include="ProcurmentKanbanBoard.g.resources" />
+    <EmbeddedResource Include="ProcurmentKanbanBoard.Form1.resources" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="ProcurmentKanbanBoard.UserInformation - Copy.txt" />
+    <Content Include="ProcurmentKanbanBoard\Resources\close.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\doing.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\done.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\exit.jpg" />
+    <Content Include="ProcurmentKanbanBoard\Resources\exit_old.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\kanban.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\orangecard.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\redcard.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\refresh.jpg" />
+    <Content Include="ProcurmentKanbanBoard\Resources\refresh.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\selectedcard.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\setings.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\switchto.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\todo.png" />
+    <Content Include="ProcurmentKanbanBoard\Resources\yellowcard.png" />
+  </ItemGroup>
+</Project>

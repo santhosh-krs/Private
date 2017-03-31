@@ -1,0 +1,76 @@
+﻿USER:1
+Request No:2
+Requested Date:3
+PR.NO:4
+P.R. Date:5
+Qty:6
+SW/HW:7
+Item Description:8
+SCM:9
+Reporting Manager:10
+IT Coordinator:11
+LOB HEAD:12
+P.O. Number:13
+PO Released Date:14
+Expected Date:15
+Project-Specific:16	
+Segment	Department:17	
+Project	Manager	Status:18	
+Received Date:19	
+Currency:19	
+Total Amount:20	
+Vendor Details:21	
+INVOICE NO.	DATE:22	
+TurnAroundTime:23
+Requested Month:24
+PO Release Month:25 
+Expected Month:26
+Received Month:27
+TAT Band:28
+
+
+
+
+
+Request No:2
+Requested Date:3
+Reporting Manager:10
+SCM:9
+PR.NO:4
+P.R. Date:5
+Qty:6
+SW/HW:7
+Item Description:8
+LOB HEAD:12
+P.O. Number:13
+PO Released Date:14
+Project:	
+Manager	
+Status:18	
+Requested Month:24
+Expected Date:15
+PO Release Month:25 
+Expected Month:26
+Received Month:27
+
+
+
+
+
+
+Project-Specific:16	
+Segment	Department:17	
+
+Received Date:19	
+Currency:19	
+Total Amount:20	
+Vendor Details:21	
+INVOICE NO.	DATE:22	
+TurnAroundTime:23
+
+TAT Band:28
+
+USER:1
+Request No:2
+Requested Date:3
+IT Coordinator:11
